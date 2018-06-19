@@ -19,5 +19,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/create_task', function () {
+    return view('create_task');
+});
 
-Route::post('save_task', 'TaskController@save_task');
+
+Route::post('/save_todo', 'TaskController@save_task')->name('save_post');
+
+Route::get('/get_task' , 'TaskController@show_task');
+
+

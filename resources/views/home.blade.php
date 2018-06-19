@@ -13,14 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-              <form action="{{route('save_post')}}" method="POST">
-                @csrf
-               <div class="form-group">
-                    <label for="title">Task:</label>
-                    <input type="text" class="form-control" placeholder="Enter title" name="title">
-                    <input type="submit" name="submit" value="+">
-              </div>
-              </form>
+              <a href="/create_task" class="btn btn-primary">CREATE TASK</a>
                    
                 </div>
             </div>
