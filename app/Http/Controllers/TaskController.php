@@ -21,11 +21,10 @@ class TaskController extends Controller
 
     public function show_task(Request $request)
     {
-    	$taskd = new Task;
+    	$tasks = task::all();
 
-    	$taskd->task = $request->task;
+    	return view('view_task' , compact('tasks'));
 
-    	
     }
 
 
