@@ -16,6 +16,10 @@
                <div class="form-group">
                     <label for="task">Task:</label>
                     <input type="text" class="form-control" placeholder="Enter task" name="task">
+                    Status:
+                    <input type="checkbox" name="status" value="Complete">Complete<br>
+                    <input type="checkbox" name="status" value="Paused" >Paused<br>
+
                     <input type="submit" name="submit" class="btn btn-dark" value="ADD TASK">
               </div>
 
